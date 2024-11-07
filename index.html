@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Portfolio Generator</h1>
+    </header>
+
+    <!-- Form Section -->
+    <section id="form-section">
+        <h2>Create Your Portfolio</h2>
+        <form id="portfolio-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="about">About Me:</label>
+            <textarea id="about" rows="4" required></textarea>
+
+            <label for="projects">Projects:</label>
+            <textarea id="projects" rows="4" placeholder="Describe your projects, separated by commas" required></textarea>
+
+            <button type="button" onclick="generatePDF()">Generate PDF</button>
+        </form>
+    </section>
+
+    <!-- jsPDF Library and AutoTable Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.4/jspdf.plugin.autotable.min.js" integrity="sha512-PRJxIx+FR3gPzyBBl9cPt62DD7owFXVcfYv0CRNFAcLZeEYfht/PpPNTKHicPs+hQlULFhH2tTWdoxnd1UGu1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
